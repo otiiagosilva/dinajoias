@@ -1,0 +1,220 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Simplifica Cartório
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .carousel {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+        }
+        .carousel-inner {
+            display: flex;
+            width: 500%;
+            height: 100%;
+            transition: transform 0.5s ease;
+        }
+        .carousel-item {
+            width: 20%;
+            height: 100%;
+            flex-shrink: 0;
+            position: relative;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .carousel-control.prev {
+            left: 10px;
+        }
+        .carousel-control.next {
+            right: 10px;
+        }
+        @media (max-width: 768px) {
+            .carousel-inner {
+                width: 500%;
+            }
+            .carousel-item {
+                width: 100%;
+            }
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <header class="bg-gray-300 py-4">
+   <div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Simplifica Cartório logo" class="h-8 w-8 mr-2" src="https://i.ibb.co/rbTYMWs/logo.png"/>
+     <div class="text-xl font-bold text-yellow-600">
+      Simplifica Cartório
+     </div>
+    </div>
+    <nav class="relative">
+     <button class="text-gray-700 focus:outline-none" id="menu-button">
+      Menu
+      <i class="fas fa-chevron-down">
+      </i>
+     </button>
+     <div class="absolute right-0 mt-2 w-48 bg-white border rounded shadow-lg hidden" id="menu-dropdown">
+      <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="#">
+       Inventário
+      </a>
+      <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="#">
+       Registro Civil
+      </a>
+      <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="#">
+       PJ / D&amp;J
+      </a>
+      <a class="block px-4 py-2 text-gray-700 hover:bg-gray-200" href="#">
+       Contato
+      </a>
+     </div>
+    </nav>
+   </div>
+  </header>
+  <main class="text-center">
+   <section class="bg-white py-12">
+    <h1 class="text-4xl font-bold text-yellow-600">
+     SIMPLIFICA CARTÓRIO
+    </h1>
+    <p class="text-yellow-600">
+     Serviços e Consultoria
+    </p>
+   </section>
+   <section class="relative">
+    <img alt="People in a business meeting" class="w-full h-96 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/maReidvzSy20Sygc1u2BXdXCcHSUTJkFKN9QXu6olOjMs86JA.jpg" width="1200"/>
+   </section>
+   <section class="py-12">
+    <h2 class="text-2xl font-bold text-yellow-800">
+     Quem Somos
+    </h2>
+    <p class="text-yellow-800 mt-4 max-w-2xl mx-auto">
+     Atuamos com Regularização de Imóveis, Inventário Extrajudicial, Constituição de Empresas, Registro Civil das Pessoas Jurídicas com CNPJ e muito mais em um só lugar.
+                Nosso time é composto por Tabeliães de Notas e Registradores Civis das Pessoas Naturais, Certificamos Cartórios e Notários em todo o Brasil.
+                Nossa missão é oferecer um atendimento personalizado e de excelência, visando atender as necessidades e expectativas de nossos clientes.
+                Estamos comprometidos em garantir que todos os serviços de Regularização, Validação e Certificação sejam realizados com agilidade e segurança.
+                Conte conosco para simplificar a sua vida e a do seu negócio!
+    </p>
+    <button class="mt-6 px-4 py-2 bg-gray-700 text-white rounded">
+     Saiba mais
+    </button>
+   </section>
+   <section class="carousel">
+    <div class="carousel-inner" id="carousel-inner">
+     <div class="carousel-item">
+      <img alt="Close-up of a hand signing a document" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/7gIrCrKTqpYXMBnOO87ys0jBWDctoXMGEzL1ZRnELTtGWe6JA.jpg"/>
+      <div class="absolute inset-0 flex items-center justify-center">
+       <h2 class="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+        <a href="#" class="text-white">Inventário Extrajudicial</a>
+       </h2>
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img alt="Close-up of a hand signing a document" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/7gIrCrKTqpYXMBnOO87ys0jBWDctoXMGEzL1ZRnELTtGWe6JA.jpg"/>
+      <div class="absolute inset-0 flex items-center justify-center">
+       <h2 class="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+        <a href="#" class="text-white">Registro Civil</a>
+       </h2>
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img alt="Close-up of a hand signing a document" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/7gIrCrKTqpYXMBnOO87ys0jBWDctoXMGEzL1ZRnELTtGWe6JA.jpg"/>
+      <div class="absolute inset-0 flex items-center justify-center">
+       <h2 class="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+        <a href="#" class="text-white">PJ / D&amp;J</a>
+       </h2>
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img alt="Close-up of a hand signing a document" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/7gIrCrKTqpYXMBnOO87ys0jBWDctoXMGEzL1ZRnELTtGWe6JA.jpg"/>
+      <div class="absolute inset-0 flex items-center justify-center">
+       <h2 class="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+        <a href="#" class="text-white">Item 4</a>
+       </h2>
+      </div>
+     </div>
+     <div class="carousel-item">
+      <img alt="Close-up of a hand signing a document" class="w-full h-full object-cover" src="https://storage.googleapis.com/a1aa/image/7gIrCrKTqpYXMBnOO87ys0jBWDctoXMGEzL1ZRnELTtGWe6JA.jpg"/>
+      <div class="absolute inset-0 flex items-center justify-center">
+       <h2 class="text-2xl font-bold text-white bg-black bg-opacity-50 px-4 py-2">
+        <a href="#" class="text-white">Item 5</a>
+       </h2>
+      </div>
+     </div>
+    </div>
+    <button class="carousel-control prev" onclick="prevSlide()">
+     <i class="fas fa-chevron-left">
+     </i>
+    </button>
+    <button class="carousel-control next" onclick="nextSlide()">
+     <i class="fas fa-chevron-right">
+     </i>
+    </button>
+   </section>
+   <section class="py-12">
+    <h2 class="text-2xl font-bold text-gray-700">
+     Fale Conosco
+    </h2>
+    <p class="text-gray-500 mt-4 max-w-2xl mx-auto">
+     Tem alguma dúvida ou precisa de atendimento especializado? Gostaria de agendar uma consulta?
+                Entre em contato conosco para receber atendimento personalizado e esclarecer suas dúvidas com agilidade e eficiência.
+    </p>
+    <p class="mt-4 text-gray-700">
+     <i class="fas fa-phone-alt">
+     </i>
+     +55 (11) 12345-6789
+     <br/>
+     <i class="fas fa-envelope">
+     </i>
+     <a class="text-blue-500" href="mailto:contato@simplificacartorio.com">
+      contato@simplificacartorio.com
+     </a>
+    </p>
+   </section>
+  </main>
+  <script>
+   let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        const totalItems = items.length;
+
+        function showSlide(index) {
+            const carouselInner = document.getElementById('carousel-inner');
+            carouselInner.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 3000);
+
+        document.getElementById('menu-button').addEventListener('click', () => {
+            const dropdown = document.getElementById('menu-dropdown');
+            dropdown.classList.toggle('hidden');
+        });
+  </script>
+ </body>
+</html>
